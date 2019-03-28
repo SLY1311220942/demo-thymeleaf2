@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: accountmanager-system-service
+  profiles:
+    active: dev
+  devtools:
+    restart:
+      enabled: false
+
+--- 
+#开发配置
+spring:
+  profiles: dev
+server:
+  port: 8080
