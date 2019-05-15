@@ -15,7 +15,7 @@ import org.thymeleaf.processor.element.AbstractConditionalVisibilityElementProce
 public class MyTagProcessor extends AbstractConditionalVisibilityElementProcessor {
 
 	private static final int PRECEDENCE = 1000;
-	private static final String TAG_NAME = "mytag";
+	private static final String TAG_NAME = "auth";
 
 	public MyTagProcessor() {
 		super(TAG_NAME);
@@ -44,7 +44,7 @@ public class MyTagProcessor extends AbstractConditionalVisibilityElementProcesso
 	@Override
 	protected boolean removeHostElementIfVisible(Arguments arguments, Element element) {
 		System.out.println("removeHostElementIfVisible");
-		return false;
+		return true;
 	}
 	
 
